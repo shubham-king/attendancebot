@@ -3,7 +3,7 @@
 
 
 import importlib
-from attendance_bot import (
+from bot import (
     updater,
     LOGGER,
     TG_BOT_TOKEN,
@@ -11,13 +11,13 @@ from attendance_bot import (
     WEBHOOK_PORT,
     WEBHOOK_URL
 )
-from attendance_bot.modules import ALL_MODULES
+from bot.modules import ALL_MODULES
 
 
 IMPORTED = {}
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module(
-        "attendance_bot.modules." + module_name
+        "bot.modules." + module_name
     )
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
