@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, ForeignKey, String
 
-from attendance_bot.sql import BASE, SESSION
+from bot.sql import BASE, SESSION
 
 
 class LanguageCode(BASE):
