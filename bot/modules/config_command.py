@@ -4,10 +4,10 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CommandHandler, Filters, run_async
 
-from attendance_bot import dispatcher, i18n
-from attendance_bot.sql.users_sql import get_chat_by_userid, add_user
-from attendance_bot.helpers.wrappers import localize
-from attendance_bot.custom.filters import Filter
+from bot import dispatcher, i18n
+from bot.sql.users_sql import get_chat_by_userid, add_user
+from bot.helpers.wrappers import localize
+from bot.custom.filters import Filter
 
 
 @run_async
