@@ -9,10 +9,10 @@ import pathlib
 from telegram.ext import Updater
 
 
-if os.path.exists("attendance_bot/config.py"):
-    from attendance_bot.config import Development as Config
+if os.path.exists("bot/config.py"):
+    from bot.config import Development as Config
 else:
-    from attendance_bot.sample_config import Development as Config
+    from bot.sample_config import Development as Config
 
 
 # LOGGing configurations
