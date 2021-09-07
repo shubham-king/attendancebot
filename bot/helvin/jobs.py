@@ -1,4 +1,4 @@
-from attendance_bot import dispatcher
+from bot import dispatcher
 
 
 def _delete_message(ctx):
