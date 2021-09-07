@@ -5,5 +5,5 @@ venv
 config.py
 
 __pycache__
-attendance_bot/__pycache__
-attendance_bot/modules/__pycache__
+bot/__pycache__
+bot/modules/__pycache__
