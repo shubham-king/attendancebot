@@ -4,8 +4,8 @@
 from telegram import ParseMode, Update
 from telegram.ext import CommandHandler, Filters, run_async
 
-from attendance_bot import dispatcher, i18n
-from attendance_bot.helpers.wrappers import localize
+from bot import dispatcher, i18n
+from bot.helpers.wrappers import localize
 
 
 @run_async
