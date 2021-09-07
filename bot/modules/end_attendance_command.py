@@ -9,14 +9,14 @@ from io import StringIO, BytesIO
 from telegram import Update
 from telegram.ext import CommandHandler, Filters
 
-from attendance_bot import dispatcher, i18n
+from bot import dispatcher, i18n
 
-from attendance_bot.sql.locks_sql import check_lock, toggle_lock
-from attendance_bot.sql.attendance_sheet_sql import (
+from bot.sql.locks_sql import check_lock, toggle_lock
+from bot.sql.attendance_sheet_sql import (
     get_attendance_results,
     clear_attendance_sheet,
 )
-from attendance_bot.helpers.wrappers import into_local_time, localize
+from bot.helpers.wrappers import into_local_time, localize
 
 
 @into_local_time
