@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from attendance_bot import DATABASE_URL
+from bot import DATABASE_URL
 
 
 def start() -> scoped_session:
