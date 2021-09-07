@@ -12,10 +12,10 @@ from telegram.ext import CallbackQueryHandler, run_async
 
 from mwt import MWT
 
-from attendance_bot import dispatcher, i18n
-from attendance_bot.sql.languages_sql import get_language, update_language
-from attendance_bot.sql.locks_sql import check_lock
-from attendance_bot.helpers.wrappers import localize
+from bot import dispatcher, i18n
+from bot.sql.languages_sql import get_language, update_language
+from bot.sql.locks_sql import check_lock
+from bot.helpers.wrappers import localize
 
 
 @MWT(60 * 5)
