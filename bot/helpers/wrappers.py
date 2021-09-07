@@ -1,7 +1,7 @@
-from attendance_bot import i18n
+from bot import i18n
 
-from attendance_bot.sql.timezone_sql import get_time_zone
-from attendance_bot.sql.languages_sql import get_language
+from bot.sql.timezone_sql import get_time_zone
+from bot.sql.languages_sql import get_language
 
 
 def into_local_time(func):
