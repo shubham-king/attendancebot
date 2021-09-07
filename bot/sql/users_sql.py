@@ -6,7 +6,7 @@ from sqlalchemy import (
     String
 )
 
-from attendance_bot.sql import BASE, SESSION
+from bot.sql import BASE, SESSION
 
 
 class Users(BASE):
