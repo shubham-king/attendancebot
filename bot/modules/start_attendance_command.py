@@ -4,10 +4,10 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import CommandHandler, Filters
 
-from attendance_bot import dispatcher, i18n
+from bot import dispatcher, i18n
 
-from attendance_bot.sql.locks_sql import check_lock, toggle_lock
-from attendance_bot.helpers.wrappers import localize
+from bot.sql.locks_sql import check_lock, toggle_lock
+from bot.helpers.wrappers import localize
 
 
 @localize
