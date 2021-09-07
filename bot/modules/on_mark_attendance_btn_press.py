@@ -9,8 +9,8 @@ from telegram.ext import CallbackQueryHandler, run_async
 
 from attendance_bot import dispatcher, i18n
 
-from attendance_bot.sql.attendance_sheet_sql import mark_attendance, check_attendance
-from attendance_bot.helpers.wrappers import into_local_time, localize
+from bot.sql.attendance_sheet_sql import mark_attendance, check_attendance
+from bot.helpers.wrappers import into_local_time, localize
 
 
 @run_async
