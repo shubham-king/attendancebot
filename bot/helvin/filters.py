@@ -1,8 +1,8 @@
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext.filters import BaseFilter
 
-from attendance_bot import BOT_USERNAME, updater
-from attendance_bot.custom.jobs import schedule_delete
+from bot import BOT_USERNAME, updater
+from bot.custom.jobs import schedule_delete
 
 
 class Filter(object):
