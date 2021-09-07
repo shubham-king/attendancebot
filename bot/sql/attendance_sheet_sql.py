@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, ForeignKey, String, Integer
 from sqlalchemy.orm.exc import NoResultFound
-from attendance_bot.sql import BASE, SESSION
+from bot.sql import BASE, SESSION
 
 
 class AttendanceSheet(BASE):
