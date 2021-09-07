@@ -6,7 +6,7 @@ from telegram.ext import CommandHandler, run_async
 
 from bot import dispatcher
 
-from bot.custom.filters import Filter
+from bot.helvin.filters import Filter
 
 
 @run_async
